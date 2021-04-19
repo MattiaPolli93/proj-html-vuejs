@@ -39,6 +39,12 @@ a {
 
 // Form container
 .form-container {
-    width: 300px;
-    height: 400px;
+    flex-direction: column;
+    background-color: $white;
+    width: 450px;
+    border-radius: 5%;
+
+    & input {
+        width: 90%;
+    }
 }
