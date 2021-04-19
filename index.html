@@ -20,9 +20,14 @@
         <!-- Header -->
         <header>
             <!-- Nav -->
-            <div class="navbar">
-                <ul>
-                    <li><a href="#"></a></li>
+            <div class="navbar flex">
+                <div class="logo">
+                    <img src="images/avada-marketing-logo.png" alt="Logo">
+                </div>
+                <ul class="flex">
+                    <li v-for="(section) in navbarSections">
+                        <a href="#">{{section}} </a>
+                    </li>
                 </ul>
             </div>
 
