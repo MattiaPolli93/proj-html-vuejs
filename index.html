@@ -21,12 +21,27 @@
         <header>
             <!-- Nav -->
             <div class="navbar flex">
+                <!-- Logo image -->
                 <div class="logo">
                     <img src="images/avada-marketing-logo.png" alt="Logo">
                 </div>
-                <ul class="flex">
+
+                <!-- Main nav -->
+                <ul class="flex main-nav">
                     <li v-for="(section) in navbarSections">
-                        <a href="#">{{section}} </a>
+                        <a href="#">{{section}}</a>
+                    </li>
+                </ul>
+
+                <!-- Secondary nav -->
+                <ul class="flex secondary-nav">
+                    <li>
+                        <a href="#"><i class="fas fa-phone-alt"></i>
+                        (555) 802-1234</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="btn">Free Quote</span>
+                       </a>
                     </li>
                 </ul>
             </div>
