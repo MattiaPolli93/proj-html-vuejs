@@ -1,0 +1,23 @@
+.features {
+    .container {
+        align-items: center;
+
+        .image-container {
+            width: 60%;
+        }
+        
+        .text-container {
+            width: 40%;
+
+            p {
+                font-size: $font-normal;
+            }
+
+            a {
+                display: block;
+                margin-top: 50px;
+            }
+        }
+    }
+        
+}
