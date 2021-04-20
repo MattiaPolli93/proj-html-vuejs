@@ -29,8 +29,8 @@
 
                 <!-- Main nav -->
                 <ul class="flex main-nav">
-                    <li v-for="(section) in navbarSections">
-                        <a href="#">{{section}}</a>
+                    <li v-for="(section, index) in navbarSections">
+                        <a href="#">{{section}} <i class="fas fa-chevron-down" v-if="index < 2"></i></a>
                     </li>
                 </ul>
 
@@ -83,7 +83,7 @@
             <section class="features">
                 <div class="container flex">
                     <div class="image-container">
-                        <img src="https://via.placeholder.com/400" alt="Increase Brand Awareness">
+                        <img src="images/svg/first.svg" alt="Features 1">
                     </div>
                     <div class="text-container">
                         <p>Business Growth</p>
@@ -96,7 +96,7 @@
             <section class="features">
                 <div class="container flex reverse">
                     <div class="image-container">
-                        <img src="https://via.placeholder.com/400" alt="Investors in People">
+                        <img src="images/svg/second.svg" alt="Features 2">
                     </div>
                     <div class="text-container">
                         <p>Investors in People</p>
@@ -109,7 +109,7 @@
             <section class="features">
                 <div class="container flex">
                     <div class="image-container">
-                        <img src="https://via.placeholder.com/400" alt="Harness Your Social Proof">
+                        <img src="images/svg/third.svg" alt="Features 3">
                     </div>
                     <div class="text-container">
                         <p>Social Media Analysis</p>

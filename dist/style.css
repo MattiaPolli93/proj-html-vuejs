@@ -128,6 +128,9 @@ header .navbar ul.main-nav li:first-child a, header .navbar ul.main-nav li:hover
 header .navbar ul.main-nav li a {
   color: #010101;
 }
+header .navbar ul.main-nav li a i.fas {
+  font-size: 15px;
+}
 header .navbar ul.secondary-nav {
   align-items: center;
   margin-left: 40px;
