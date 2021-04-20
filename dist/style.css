@@ -58,9 +58,15 @@ h1 {
   margin-top: 20px;
 }
 
-.features h2 {
+.features h2,
+#brands h2 {
   font-size: 54px;
   color: #010101;
+}
+
+#brands h4,
+#brands h5 {
+  font-size: 24px;
 }
 
 .btn {
@@ -138,7 +144,7 @@ header .navbar ul.secondary-nav li:first-child a {
 }
 header .jumbotron {
   height: calc(100vh - 115px);
-  background-image: url("../../images/demo-marketing-consultant.jpg");
+  background-image: url("../../images/marketing-intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -254,4 +260,55 @@ header .jumbotron .container .form-container input:hover {
 }
 .features .container.reverse {
   flex-direction: row-reverse;
+}
+
+#brands .container .brands-title p {
+  font-size: 24px;
+}
+#brands .container .brands-logos {
+  justify-content: center;
+  margin: 60px 0 100px;
+}
+#brands .container .brands-logos img {
+  height: 45px;
+  margin: 0 30px;
+}
+#brands .container.bordered {
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #e4e3e2;
+}
+#brands .container.bordered .img-box {
+  align-items: center;
+  margin: 0 30px;
+}
+#brands .container.bordered .img-box img {
+  border-radius: 50%;
+  width: 70px;
+}
+#brands .container.bordered .img-box p {
+  margin: 0;
+}
+#brands .container.bordered .img-box .text {
+  flex-direction: column;
+  margin-left: 30px;
+}
+#brands .container.bordered a,
+#brands .container.bordered h4 {
+  margin-right: 50px;
+}
+#brands .container.bordered a .btn {
+  color: #b92500;
+  font-weight: 700;
+  transition: 0.2s;
+  opacity: 0.3;
+}
+#brands .container.bordered a .btn i {
+  margin-right: 10px;
+}
+#brands .container.bordered a .btn:hover {
+  color: #fefefe;
+  opacity: 1;
 }
