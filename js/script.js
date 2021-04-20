@@ -11,6 +11,8 @@ const app = new Vue({
         // Section(s) - Features data
         featuresText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
         consultationText: "Get a Consultation",
+
+        // Section - Organisation data
     },
     methods: {
 

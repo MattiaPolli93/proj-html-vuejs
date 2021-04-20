@@ -16,25 +16,18 @@ header {
             li {
                 margin: 0 15px;
                 height: 30px;
-
+                
+                &:first-child,
+                &:hover {
+                    border-bottom: 2px solid $orange-dark;
+                    
+                    a {
+                        color: $orange-dark;
+                    }
+                }
+                
                 a {
                     color: $black;
-                }
-            }
-
-            li:first-child {
-                border-bottom: 2px solid $orange-dark;
-
-                a {
-                    color: $orange-dark;
-                }
-            }
-
-            li:hover {
-                border-bottom: 2px solid $orange-dark;
-
-                a {
-                    color: $orange-dark;
                 }
             }
         }
@@ -45,31 +38,32 @@ header {
             height: 50px;
             
             li {
-                a {                    
+                                
+                &:first-child {
+                    margin-right: 25px;
+                    
+                    i {
+                        margin-right: 15px;
+                        color: $orange-dark;
+                    }
+                    
+                    a {
+                        color: $black;
+                    }
+                }
+
+                a {
                     &.btn {
                         color: #b92500;
                         font-weight: 700;
                         transition: 0.2s;
                         opacity: 0.3;
                     }
-                    
+
                     &.btn:hover {
                         color: $white;
                         opacity: 1;
                     }
-                }
-            }
-
-            li:first-child {
-                margin-right: 25px;
-                
-                i {
-                    margin-right: 15px;
-                    color: $orange-dark;
-                }
-
-                a {
-                    color: $black;
                 }
             }
         }
@@ -80,6 +74,7 @@ header {
         background-image: url("../../images/marketing-intro.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position-x: 45%;
         position: relative;
 
         & .container {
@@ -124,7 +119,7 @@ header {
                 box-shadow: 2px 2px 10px $grey-dark;
                 position: absolute;
                 right: 15%;
-                bottom: -10%;
+                bottom: -5%;
                 z-index: 2;
 
                 img {
