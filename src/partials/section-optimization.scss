@@ -83,6 +83,7 @@
 
     .container.third {
         flex-direction: column;
+        margin-top: 60px;
 
         .awards {
             margin: 50px 0;
@@ -98,6 +99,7 @@
                     width: 100%;
                     font-size: $font-small;
                     line-height: 30px;
+                    margin-top: 0;
                 }
 
                 &:not(:last-child) {

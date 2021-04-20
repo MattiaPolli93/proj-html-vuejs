@@ -1,0 +1,28 @@
+#team {
+    margin: 0;
+
+    .container {
+        justify-content: center;
+        align-items: center;
+
+        .image-box {
+            width: 60%;
+            padding: 70px 70px 70px 0;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 10px 10px 15px $grey-light;
+            }
+        }
+
+        .text-box {
+            padding: 0 40px;
+            width: 40%;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

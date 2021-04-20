@@ -30,7 +30,7 @@ a {
 }
 
 section {
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .container {
@@ -73,8 +73,15 @@ h1 {
   font-size: 24px;
 }
 
-#optimization h3 {
+#optimization h3,
+#team h3 {
   font-size: 32px;
+  font-weight: 500;
+}
+
+#team h5 {
+  font-size: 18px;
+  margin: 50px 0 10px;
 }
 
 .btn {
@@ -428,6 +435,7 @@ header .jumbotron .container .form-container input::placeholder {
 }
 #optimization .container.third {
   flex-direction: column;
+  margin-top: 60px;
 }
 #optimization .container.third .awards {
   margin: 50px 0;
@@ -443,7 +451,32 @@ header .jumbotron .container .form-container input::placeholder {
   width: 100%;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 0;
 }
 #optimization .container.third .awards .awards-box:not(:last-child) {
   margin-right: 80px;
+}
+
+#team {
+  margin: 0;
+}
+#team .container {
+  justify-content: center;
+  align-items: center;
+}
+#team .container .image-box {
+  width: 60%;
+  padding: 70px 70px 70px 0;
+}
+#team .container .image-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px #e4e3e2;
+}
+#team .container .text-box {
+  padding: 0 40px;
+  width: 40%;
+}
+#team .container .text-box p {
+  margin: 0;
 }
