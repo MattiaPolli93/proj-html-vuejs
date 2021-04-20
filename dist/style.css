@@ -30,7 +30,7 @@ a {
 }
 
 section {
-  margin: 200px 0;
+  margin: 150px 0;
 }
 
 .container {
@@ -59,7 +59,8 @@ h1 {
 }
 
 .features h2,
-#brands h2 {
+#brands h2,
+#organisations h2 {
   font-size: 54px;
   color: #010101;
 }
@@ -171,11 +172,12 @@ header .jumbotron .container .title-container .title-link a {
   border: 2px solid #fefefe;
   transition: 0.5s;
 }
-header .jumbotron .container .title-container .title-link a i {
-  margin-left: 5px;
-}
 header .jumbotron .container .title-container .title-link a:hover {
   background-color: transparent;
+  color: #fefefe;
+}
+header .jumbotron .container .title-container .title-link a i {
+  margin-left: 5px;
 }
 header .jumbotron .container .form-container {
   align-items: center;
@@ -195,12 +197,12 @@ header .jumbotron .container .form-container img {
 header .jumbotron .container .form-container p {
   color: #858786;
 }
-header .jumbotron .container .form-container p small {
-  font-size: 14px;
-}
 header .jumbotron .container .form-container p:last-of-type {
   margin-top: 0;
   margin-bottom: 15px;
+}
+header .jumbotron .container .form-container p small {
+  font-size: 14px;
 }
 header .jumbotron .container .form-container a {
   color: #f76210;
@@ -214,7 +216,7 @@ header .jumbotron .container .form-container a.btn {
   width: 100%;
   margin-top: 10px;
 }
-header .jumbotron .container .form-container a.btn:hover {
+header .jumbotron .container .form-container a.btn.btn:hover {
   background-color: #eb621f;
 }
 header .jumbotron .container .form-container input {
@@ -226,6 +228,9 @@ header .jumbotron .container .form-container input {
   border: 1px solid #e4e3e2;
   transition: 0.5s;
 }
+header .jumbotron .container .form-container input:hover {
+  border: 1px solid #f76210;
+}
 header .jumbotron .container .form-container input::-moz-placeholder {
   font-size: 18px;
 }
@@ -234,9 +239,6 @@ header .jumbotron .container .form-container input:-ms-input-placeholder {
 }
 header .jumbotron .container .form-container input::placeholder {
   font-size: 18px;
-}
-header .jumbotron .container .form-container input:hover {
-  border: 1px solid #f76210;
 }
 
 .features .container {
@@ -311,4 +313,50 @@ header .jumbotron .container .form-container input:hover {
 #brands .container.bordered a .btn:hover {
   color: #fefefe;
   opacity: 1;
+}
+
+#organisations .container h2 {
+  margin-bottom: 70px;
+}
+#organisations .container .cards-container {
+  justify-content: center;
+  width: 100%;
+}
+#organisations .container .cards-container .card-box {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 20px;
+}
+#organisations .container .cards-container .card-box img {
+  width: 100%;
+  height: 55vh;
+  cursor: pointer;
+}
+#organisations .container .cards-container .card-box img:hover {
+  filter: sepia(3);
+}
+#organisations .container .cards-container .card-box h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 25px 0 40px;
+}
+#organisations .container .cards-container .card-box h2:hover a {
+  color: #f76210;
+}
+#organisations .container .cards-container .card-box h2 a {
+  transition: 0.5s;
+}
+#organisations .container .cards-container .card-box h3 {
+  font-size: 54px;
+}
+#organisations .container .cards-container .card-box p {
+  margin-top: 5px;
+}
+#organisations .button-div {
+  font-size: 24px;
+  margin-top: 80px;
+}
+#organisations .button-div:hover a {
+  background-color: #f76210;
 }

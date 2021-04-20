@@ -105,14 +105,15 @@ header {
                         border: 2px solid $white;
                         transition: 0.5s;
                         
+                        &:hover {
+                            background-color: transparent;
+                            color: $white;
+                        }
+
                         i {
                             margin-left: 5px;
                         }
-                    }
-
-                    a:hover {
-                        background-color: transparent;
-                    }
+                    }    
                 }
             }
 
@@ -135,14 +136,14 @@ header {
                 p {
                     color: $grey-dark;
                     
+                    &:last-of-type {
+                        margin-top: 0;
+                        margin-bottom: 15px;
+                    }
+
                     small {
                         font-size: 14px;
                     }
-                }
-
-                p:last-of-type {
-                    margin-top: 0;
-                    margin-bottom: 15px;
                 }
 
                 a {
@@ -158,10 +159,10 @@ header {
                     color: $white;
                     width: 100%;
                     margin-top: 10px;
-                }
 
-                a.btn:hover {
-                    background-color: $orange-light;
+                    &.btn:hover {
+                        background-color: $orange-light;
+                    }
                 }
 
                 input {
@@ -173,13 +174,13 @@ header {
                     border: 1px solid $grey-light;
                     transition: 0.5s;
 
+                    &:hover {
+                        border: 1px solid $orange-dark;
+                    }
+
                     &::placeholder {
                         font-size: $font-small;
                     }
-                }
-
-                input:hover {
-                    border: 1px solid $orange-dark;
                 }
             }
         }

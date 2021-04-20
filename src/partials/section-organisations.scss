@@ -1,0 +1,61 @@
+#organisations {
+    .container {
+        h2 {
+            margin-bottom: 70px;
+        }
+
+        .cards-container {
+            justify-content: center;
+            width: 100%;
+
+            .card-box {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 20px;
+
+                img {
+                    width: 100%;
+                    height: 55vh;
+                    cursor: pointer;
+
+                    &:hover {
+                        // TODO
+                        filter: sepia(3);
+                    }
+                }
+
+                h2 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    margin: 25px 0 40px;
+                    
+                    &:hover a {
+                        color: $orange-dark;
+                    }
+                    
+                    a {    
+                        transition: 0.5s;
+                    }
+                }
+
+                h3 {
+                    font-size: $font-big;
+                }
+
+                p {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .button-div {
+        font-size: $font-normal;
+        margin-top: 80px;
+
+        &:hover a {
+           background-color: $orange-dark;
+        }
+    }
+}
