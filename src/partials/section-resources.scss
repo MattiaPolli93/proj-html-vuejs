@@ -1,0 +1,41 @@
+#resources {
+    background-color: $grey-light;
+    padding: 80px 0 100px;
+
+    .container {
+        .title-button-box {
+            justify-content: space-between;
+            margin-bottom: 90px;
+
+            .title {
+                width: 55%;
+
+                h2 {
+                    line-height: 60px;
+                }
+            }
+
+            a {
+                align-self: flex-end;
+                margin-bottom: 20px;
+            }
+        }
+
+        .img-boxes {
+            width: 100%;
+
+            .img-box {
+                width: calc(100% / 3);
+
+                &:nth-child(2) {
+                    margin: 0 35px;
+                }
+
+                img {
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}

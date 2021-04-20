@@ -52,10 +52,17 @@
                 li {
                     align-items: center;
                     
+                    &:hover {
+                        i,
+                        .texts h3 {
+                            color: $orange-dark;
+                        }
+                    }
+                    
                     &:not(:last-child) {
                         margin-bottom: 50px;
                     }
-
+                    
                     i {
                         font-size: $font-normal;
                         color: $orange-dark;
@@ -63,11 +70,12 @@
                         border-radius: 20px;
                         padding: 20px;
                     }
-
+                    
                     .texts {
                         margin-left: 45px;
-
+                        
                         h3 {
+                            transition: 0.5s;
                             font-size: $font-normal;
                         }
 

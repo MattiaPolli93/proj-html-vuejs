@@ -35,7 +35,7 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 .form-container {
@@ -61,7 +61,8 @@ h1 {
 .features h2,
 #brands h2,
 #organisations h2,
-#optimization h2 {
+#optimization h2,
+#resources h2 {
   font-size: 54px;
   color: #010101;
 }
@@ -74,7 +75,8 @@ h1 {
 }
 
 #optimization h3,
-#team h3 {
+#team h3,
+#resources h3 {
   font-size: 32px;
   font-weight: 500;
 }
@@ -413,6 +415,10 @@ header .jumbotron .container .form-container input::placeholder {
 #optimization .container.second .qualities ul li {
   align-items: center;
 }
+#optimization .container.second .qualities ul li:hover i,
+#optimization .container.second .qualities ul li:hover .texts h3 {
+  color: #f76210;
+}
 #optimization .container.second .qualities ul li:not(:last-child) {
   margin-bottom: 50px;
 }
@@ -427,6 +433,7 @@ header .jumbotron .container .form-container input::placeholder {
   margin-left: 45px;
 }
 #optimization .container.second .qualities ul li .texts h3 {
+  transition: 0.5s;
   font-size: 24px;
 }
 #optimization .container.second .qualities ul li .texts p {
@@ -479,4 +486,36 @@ header .jumbotron .container .form-container input::placeholder {
 }
 #team .container .text-box p {
   margin: 0;
+}
+
+#resources {
+  background-color: #e4e3e2;
+  padding: 80px 0 100px;
+}
+#resources .container .title-button-box {
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+#resources .container .title-button-box .title {
+  width: 55%;
+}
+#resources .container .title-button-box .title h2 {
+  line-height: 60px;
+}
+#resources .container .title-button-box a {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+#resources .container .img-boxes {
+  width: 100%;
+}
+#resources .container .img-boxes .img-box {
+  width: calc(100% / 3);
+}
+#resources .container .img-boxes .img-box:nth-child(2) {
+  margin: 0 35px;
+}
+#resources .container .img-boxes .img-box img {
+  width: 100%;
+  margin-bottom: 25px;
 }
