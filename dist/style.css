@@ -488,10 +488,9 @@ header .jumbotron .container .form-container input::placeholder {
 }
 #team .container .image-box {
   width: 60%;
-  padding: 70px 70px 70px 0;
 }
 #team .container .image-box img {
-  width: 100%;
+  width: 85%;
   border-radius: 10px;
   box-shadow: 10px 10px 15px #e4e3e2;
 }
