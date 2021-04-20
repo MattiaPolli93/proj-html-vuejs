@@ -49,7 +49,7 @@ section {
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 70px;
   color: #fefefe;
 }
 
@@ -65,12 +65,15 @@ h1 {
 #resources h2 {
   font-size: 54px;
   color: #010101;
+  line-height: 60px;
 }
 
 #brands h4,
 #brands h5,
 #optimization h4,
-#optimization h5 {
+#optimization h5,
+#make-happen h4,
+#make-happen h5 {
   font-size: 24px;
 }
 
@@ -84,6 +87,12 @@ h1 {
 #team h5 {
   font-size: 18px;
   margin: 50px 0 10px;
+}
+
+#make-happen h2 {
+  font-size: 70px;
+  color: #fefefe;
+  line-height: 80px;
 }
 
 .btn {
@@ -100,6 +109,7 @@ h1 {
   line-height: 20px;
   border-radius: 10px;
   padding: 16px 40px;
+  font-size: 18px;
 }
 
 header .navbar {
@@ -259,8 +269,15 @@ header .jumbotron .container .form-container input::placeholder {
   justify-content: space-between;
   align-items: center;
 }
+.features .container .image-container {
+  margin: 0 100px;
+}
 .features .container .image-container img {
   width: 100%;
+}
+.features .container .text-container {
+  width: 40%;
+  margin: 0 80px;
 }
 .features .container .text-container p {
   font-size: 24px;
@@ -268,11 +285,6 @@ header .jumbotron .container .form-container input::placeholder {
 .features .container .text-container a {
   display: block;
   margin-top: 50px;
-}
-.features .container .image-container,
-.features .container .text-container {
-  width: 50%;
-  margin: 0 80px;
 }
 .features .container.reverse {
   flex-direction: row-reverse;
@@ -494,6 +506,7 @@ header .jumbotron .container .form-container input::placeholder {
 #resources {
   background-color: #e4e3e2;
   padding: 80px 0 100px;
+  margin-bottom: 0;
 }
 #resources .container .title-button-box {
   justify-content: space-between;
@@ -521,4 +534,41 @@ header .jumbotron .container .form-container input::placeholder {
 #resources .container .img-boxes .img-box img {
   width: 100%;
   margin-bottom: 25px;
+}
+
+#make-happen {
+  color: #fefefe;
+  background-color: #010101;
+  margin: 0;
+  padding: 100px 0;
+}
+#make-happen .container .paragraphs {
+  width: 50%;
+  padding-right: 100px;
+}
+#make-happen .container .paragraphs p:first-of-type {
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+}
+#make-happen .container .paragraphs p:first-of-type::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -40%;
+  width: 100px;
+  height: 2px;
+  background-color: #858786;
+}
+#make-happen .container .paragraphs p:nth-of-type(2) {
+  margin: 90px 0 30px;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+}
+#make-happen .container .paragraphs p:last-of-type {
+  margin-top: 5px;
+}
+#make-happen .container .form-container {
+  width: 40%;
 }

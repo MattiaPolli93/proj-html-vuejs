@@ -3,13 +3,18 @@
         justify-content: space-between;
         align-items: center;
         
-        .image-container {            
+        .image-container {
+            margin: 0 100px;
+            
             img {
                 width: 100%;
             }
         }
         
         .text-container {
+            width: 40%;
+            margin: 0 80px;
+
             p {
                 font-size: $font-normal;
             }
@@ -18,12 +23,6 @@
                 display: block;
                 margin-top: 50px;
             }
-        }
-
-        .image-container,
-        .text-container {
-            width: 50%;
-            margin: 0 80px;
         }
 
         &.reverse {
