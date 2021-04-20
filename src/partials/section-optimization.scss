@@ -80,4 +80,30 @@
             }
         }
     }
+
+    .container.third {
+        flex-direction: column;
+
+        .awards {
+            margin: 50px 0;
+            .awards-box {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 60%;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: $font-small;
+                    line-height: 30px;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 80px;
+                }
+            }
+        }
+    }
 }
