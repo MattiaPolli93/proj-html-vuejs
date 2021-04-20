@@ -234,13 +234,11 @@ header .jumbotron .container .form-container input:hover {
 }
 
 .features .container {
+  justify-content: space-between;
   align-items: center;
 }
-.features .container .image-container {
-  width: 60%;
-}
-.features .container .text-container {
-  width: 40%;
+.features .container .image-container img {
+  width: 100%;
 }
 .features .container .text-container p {
   font-size: 24px;
@@ -248,4 +246,12 @@ header .jumbotron .container .form-container input:hover {
 .features .container .text-container a {
   display: block;
   margin-top: 50px;
+}
+.features .container .image-container,
+.features .container .text-container {
+  width: 50%;
+  margin: 0 80px;
+}
+.features .container.reverse {
+  flex-direction: row-reverse;
 }

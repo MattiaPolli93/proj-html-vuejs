@@ -37,7 +37,7 @@
                 <ul class="flex secondary-nav">
                     <li>
                         <a href="#"><i class="fas fa-phone-alt"></i>
-                        (555) 802-1234</a>
+                        {{phoneNumber}}</a>
                     </li>
                     <li>
                         <a href="#" class="btn">Free Quote
@@ -65,7 +65,7 @@
                         <h4>Richard Madsen</h4>
                         <p>Marketing Consultant Expert</p>
                         <a href="#"><i class="fas fa-phone-alt"></i>
-                        (555) 802-1234</a>
+                        {{phoneNumber}}</a>
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Your Email*">
                         <input type="text" placeholder="Your Phone Number*">
@@ -81,17 +81,42 @@
             <!-- Features sections (3) -->
             <section class="features">
                 <div class="container flex">
-                    <div class="image-container text-center">
+                    <div class="image-container">
                         <img src="https://via.placeholder.com/400" alt="Increase Brand Awareness">
                     </div>
                     <div class="text-container">
+                        <p>Business Growth</p>
                         <h2>Increase Brand Awareness</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
-                        <a href="#"><span class="btn">Get a Consultation</span>
+                        <p>{{featuresText}}</p>
+                        <a href="#"><span class="btn">{{consultationText}}</span>
+                    </div>                    
+            </section>
+            
+            <section class="features">
+                <div class="container flex reverse">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400" alt="Investors in People">
                     </div>
+                    <div class="text-container">
+                        <p>Investors in People</p>
+                        <h2>In-House Sales Training</h2>
+                        <p>{{featuresText}}</p>
+                        <a href="#"><span class="btn">{{consultationText}}</span></a>
+                    </div>                    
             </section>
 
-            
+            <section class="features">
+                <div class="container flex">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400" alt="Harness Your Social Proof">
+                    </div>
+                    <div class="text-container">
+                        <p>Social Media Analysis</p>
+                        <h2>Harness Your Social Proof</h2>
+                        <p>{{featuresText}}</p>
+                        <a href="#"><span class="btn">{{consultationText}}</span>
+                    </div>                    
+            </section>            
         </main>
        
 

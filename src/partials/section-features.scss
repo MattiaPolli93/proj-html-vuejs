@@ -1,14 +1,15 @@
 .features {
     .container {
+        justify-content: space-between;
         align-items: center;
-
-        .image-container {
-            width: 60%;
+        
+        .image-container {            
+            img {
+                width: 100%;
+            }
         }
         
         .text-container {
-            width: 40%;
-
             p {
                 font-size: $font-normal;
             }
@@ -17,6 +18,16 @@
                 display: block;
                 margin-top: 50px;
             }
+        }
+
+        .image-container,
+        .text-container {
+            width: 50%;
+            margin: 0 80px;
+        }
+
+        &.reverse {
+            flex-direction: row-reverse;
         }
     }
         
