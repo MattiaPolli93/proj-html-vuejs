@@ -12,16 +12,24 @@ h1 {
 
 .features,
 #brands,
-#organisations {
+#organisations,
+#optimization {
     h2 {
         font-size: $font-big;
         color: $black;
     }
 }
 
-#brands {
+#brands,
+#optimization {
     h4,
     h5 {
         font-size: $font-normal;
+    }
+}
+
+#optimization {
+    h3 {
+        font-size: 32px;
     }
 }
