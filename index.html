@@ -18,18 +18,18 @@
 </head>
 <body>
     <div id="app" class="wrapper">
-        <!-- Header -->
+
         <header>
             <!-- Nav -->
             <div class="navbar flex">
                 <!-- Logo image -->
                 <div class="logo">
-                    <img src="images/avada-marketing-logo.png" alt="Logo">
+                    <img :src="header.navbarLogo" alt="Logo">
                 </div>
 
                 <!-- Main nav -->
                 <ul class="flex main-nav">
-                    <li v-for="(section, index) in navbarSections">
+                    <li v-for="(section, index) in header.navbarSections">
                         <a href="#">{{section}} <i class="fas fa-chevron-down" v-if="index < 2"></i></a>
                     </li>
                 </ul>
@@ -41,8 +41,7 @@
                         {{phoneNumber}}</a>
                     </li>
                     <li>
-                        <a href="#" class="btn">Free Quote
-                       </a>
+                        <a href="#" class="btn">{{buttons.freeQuote}}</a>
                     </li>
                 </ul>
             </div>
@@ -53,10 +52,10 @@
 
                     <!-- Title -->
                     <div class="title-container flex">
-                        <h1>Unlock Your Online Growth Potential</h1>
-                        <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture.</p>
+                        <h1>{{header.jumbotron.title}}</h1>
+                        <p>{{header.jumbotron.par}}</p>
                         <div class="title-link text-center">
-                            <a href="#" class="btn-white">Our Services <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-white">{{buttons.services}} <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -70,7 +69,7 @@
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Your Email*">
                         <input type="text" placeholder="Your Phone Number*">
-                        <a href="#" class="btn text-center">Get a Callback</a>
+                        <a href="#" class="btn text-center">{{buttons.callback}}</a>
                         <p><small>By submitting my data I agree to be contacted</small></p>
                     </div>
                 </div>
@@ -83,39 +82,39 @@
             <section class="features">
                 <div class="container flex">
                     <div class="image-container">
-                        <img src="images/svg/first.svg" alt="Features 1">
+                        <img :src="featuresSection.brand.image" alt="Features 1">
                     </div>
                     <div class="text-container">
-                        <p>Business Growth</p>
-                        <h2>Increase Brand Awareness</h2>
-                        <p>{{placeholderLongText}}</p>
-                        <a href="#"><span class="btn">{{consultationText}}</span></a>
+                        <p>{{featuresSection.brand.par}}</p>
+                        <h2>{{featuresSection.brand.title}}</h2>
+                        <p>{{placeholders.placeholderLongText}}</p>
+                        <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
                     </div>                    
             </section>
             
             <section class="features">
                 <div class="container flex reverse">
                     <div class="image-container">
-                        <img src="images/svg/second.svg" alt="Features 2">
+                        <img :src="featuresSection.sales.image" alt="Features 2">
                     </div>
                     <div class="text-container">
-                        <p>Investors in People</p>
-                        <h2>In-House Sales Training</h2>
-                        <p>{{placeholderLongText}}</p>
-                        <a href="#"><span class="btn">{{consultationText}}</span></a>
+                        <p>{{featuresSection.sales.par}}</p>
+                        <h2>{{featuresSection.sales.title}}</h2>
+                        <p>{{placeholders.placeholderLongText}}</p>
+                        <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
                     </div>                    
             </section>
 
             <section class="features">
                 <div class="container flex">
                     <div class="image-container">
-                        <img src="images/svg/third.svg" alt="Features 3">
+                        <img :src="featuresSection.socialProof.image" alt="Features 3">
                     </div>
                     <div class="text-container">
-                        <p>Social Media Analysis</p>
-                        <h2>Harness Your Social Proof</h2>
-                        <p>{{placeholderLongText}}</p>
-                        <a href="#"><span class="btn">{{consultationText}}</span></a>
+                        <p>{{featuresSection.socialProof.par}}</p>
+                        <h2>{{featuresSection.socialProof.title}}</h2>
+                        <p>{{placeholders.placeholderLongText}}</p>
+                        <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
                     </div>                    
             </section>
             
@@ -124,16 +123,16 @@
                 <!-- Logos -->
                 <div class="container">
                     <div class="brands-title text-center">
-                        <h2>Some Brands We Work With</h2>
-                        <p>Quisque aliquet, libero consequat elementum convallis.</p>
+                        <h2>{{brandsSection.title}}</h2>
+                        <p>{{placeholders.placeholderShortTextSecond}}</p>
                     </div>
                     <div class="brands-logos flex">
-                        <img src="images/abstract.png" alt="Abstract">
-                        <img src="images/cglobal.png" alt="cglobal">
-                        <img src="images/next.png" alt="Next">
-                        <img src="images/hemisferio.png" alt="Hemisferio">
-                        <img src="images/spaces.png" alt="(Spaces)">
-                        <img src="images/digitalbox.png" alt="Digitalbox">
+                        <img :src="brandsSection.images[0].image" alt="Abstract">
+                        <img :src="brandsSection.images[1].image" alt="cglobal">
+                        <img :src="brandsSection.images[2].image" alt="Next">
+                        <img :src="brandsSection.images[3].image" alt="Hemisferio">
+                        <img :src="brandsSection.images[4].image" alt="(Spaces)">
+                        <img :src="brandsSection.images[5].image" alt="Digitalbox">
                     </div>
                 </div>
 
@@ -179,7 +178,7 @@
                     </div>
 
                     <div class="button-div text-center">
-                        <a href="#"><span class="btn">Read More Case Studies</span></a>
+                        <a href="#"><span class="btn">{{buttons.caseStudies}}</span></a>
                         </div>
                     </div>
                 
@@ -191,8 +190,8 @@
                 <div class="container flex">
                     <div class="text-box">
                         <h2>{{optimizationSection.mainTitles[0]}}</h2>
-                        <p>{{placeholderShortText}}</p>
-                        <a href="#"><span class="btn">Why Work With Us</span></a>
+                        <p>{{placeholders.placeholderShortText}}</p>
+                        <a href="#"><span class="btn">{{buttons.workWithUs}}</span></a>
                     </div>
                     <div class="image-box">
                         <img src="images/we-boost-our-clients.jpg" alt="Boost Clients">
@@ -205,11 +204,11 @@
                     <div class="par-box flex">
                         <div class="text-container">
                             <h3>{{optimizationSection.titles[0]}}</h3>
-                            <p>{{placeholderText}}</p>
+                            <p>{{placeholders.placeholderText}}</p>
                         </div>
                         <div class="text-container">
                             <h3>{{optimizationSection.titles[1]}}</h3>
-                            <p>{{placeholderText}}</p>                       
+                            <p>{{placeholders.placeholderText}}</p>                       
                         </div>
                     </div>
 
@@ -220,21 +219,21 @@
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
                                     <h3>{{optimizationSection.qualities[0]}}</h3>
-                                    <p>{{placeholderShortTextSecond}}</p>
+                                    <p>{{placeholders.placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
                                     <h3>{{optimizationSection.qualities[1]}}</h3>
-                                    <p>{{placeholderShortTextSecond}}</p>
+                                    <p>{{placeholders.placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
                                     <h3>{{optimizationSection.qualities[2]}}</h3>
-                                    <p>{{placeholderShortTextSecond}}</p>
+                                    <p>{{placeholders.placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -269,10 +268,10 @@
             <section id="team">
                 <div class="container flex">
                     <div class="image-box">
-                        <img src="images/large-testimonial.jpg" alt="Testimonial">
+                        <img :src="teamsSection.image" alt="Testimonial">
                     </div>
                     <div class="text-box">
-                        <h3>"The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”</h3>
+                        <h3>"{{teamsSection.title}}"</h3>
                         <h5>Kate Schadler</h5>
                         <p><small>Marketing Consultant - Abstract</small></p>
                     </div>
@@ -287,7 +286,7 @@
                         <div class="title">
                             <h2>{{resourcesSection.title}}</h2>
                         </div>
-                        <a href="#"><span class="btn">Explore All Resources</span></a>
+                        <a href="#"><span class="btn">{{buttons.resources}}</span></a>
                     </div>
 
                     <!-- Image boxes -->
@@ -315,7 +314,7 @@
                     <!-- Left -->
                     <div class="paragraphs">
                         <h2>{{makeHappenSection.title}} </h2>
-                        <p>{{placeholderText}}</p>
+                        <p>{{placeholders.placeholderText}}</p>
                         <p>“{{makeHappenSection.paragraph}}”</p>
                         <h5>{{makeHappenSection.name}}</h5>
                         <p><small>{{makeHappenSection.smallTag}}</small></p>
@@ -331,21 +330,20 @@
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Your Email*">
                         <input type="text" placeholder="Your Phone Number*">
-                        <a href="#" class="btn text-center">Get a Callback</a>
+                        <a href="#" class="btn text-center">{{buttons.callback}}</a>
                         <p><small>By submitting my data I agree to be contacted</small></p>
                     </div>
                 </div>
             </section>
         </main>       
 
-        <!-- Footer  -->
         <footer>
             <div class="container">
                 <div class="upper-footer flex">
 
                     <!-- Title and Social -->
                     <div class="title-box flex">
-                        <h3>{{footerTitle}}</h3>
+                        <h3>{{footer.title}}</h3>
                         <div class="social-logos">
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-twitter"></i>
@@ -358,25 +356,25 @@
 
                     <!-- Lists -->
                     <div class="services-box flex" >
-                        <h5>{{services.title}}</h5>
+                        <h5>{{footer.services.title}}</h5>
                         <ul>
-                            <li v-for="(item) in services.links">
+                            <li v-for="(item) in footer.services.links">
                                 <a href="#">{{item}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="resources-box flex">
-                        <h5>{{resources.title}}</h5>
+                        <h5>{{footer.resources.title}}</h5>
                         <ul>
-                            <li v-for="(item) in resources.links">
+                            <li v-for="(item) in footer.resources.links">
                                 <a href="#">{{item}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="company-box flex">
-                        <h5>{{company.title}}</h5>
+                        <h5>{{footer.company.title}}</h5>
                         <ul>
-                            <li v-for="(item) in company.links">
+                            <li v-for="(item) in footer.company.links">
                                 <a href="#">{{item}}</a>
                             </li>
                         </ul>
