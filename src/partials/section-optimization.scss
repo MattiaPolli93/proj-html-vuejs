@@ -36,15 +36,14 @@
                 }
 
                 p {
-                    font-size: $font-normal;
+                    font-size: $font-small;
                 }
             }
         }
 
         .qualities {
-            justify-content: center;
             width: 50%;
-            margin-left: 80px;
+            margin-left: 120px;
 
             ul {
                 margin-top: 20px;
@@ -101,7 +100,7 @@
 
                 img {
                     width: 50%;
-                    height: 130px;
+                    height: 115px;
                 }
 
                 p {

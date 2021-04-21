@@ -10,6 +10,7 @@ const app = new Vue({
         copyright: "© 2020 • Avada Consultant • Powered by WordPress",
         submitData: "By submitting my data I agree to be contacted",
         marketingExpert: "Marketing Consultant Expert",
+        hubSpotChat: "This is a free HubSpot live chat. You can create your own customers with Avada & HubSpot!",
 
         // Placeholder texts
         placeholders: {
@@ -131,8 +132,8 @@ const app = new Vue({
             ]
         },
 
-        // Section - Teams data
-        teamsSection: {
+        // Section - Team data
+        teamSection: {
             title: "The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.",
             image: "images/large-testimonial.jpg"
         },

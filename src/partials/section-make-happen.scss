@@ -7,7 +7,6 @@
     .container {        
         .paragraphs {
             width: 50%;
-            padding-right: 100px;
 
             p {
                 &:first-of-type {
@@ -42,7 +41,7 @@
         .form-container {
             align-items: center;
             width: 35%;
-            margin-left: 80px;
+            margin-left: 150px;
 
             h4 {
                 color: $black;

@@ -72,6 +72,17 @@
                         <a href="#" class="btn text-center">{{buttons.callback}}</a>
                         <p><small>{{submitData}}</small></p>
                     </div>
+
+                    <!-- Squared boxes -->
+                    <div class="squared-boxes flex">
+                        <div class="first-box flex">
+                            <i class="fas fa-caret-square-up"></i>
+                            <p>Demos</p>
+                        </div>
+                        <div class="second-box flex">
+                            <p><span class="big-number">$39</span><br>On Sale<p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -268,10 +279,10 @@
             <section id="team">
                 <div class="container flex">
                     <div class="image-box">
-                        <img :src="teamsSection.image" alt="Testimonial">
+                        <img :src="teamSection.image" alt="Testimonial">
                     </div>
                     <div class="text-box">
-                        <h3>"{{teamsSection.title}}"</h3>
+                        <h3>"{{teamSection.title}}"</h3>
                         <h5>Kate Schadler</h5>
                         <p><small>Marketing Consultant - Abstract</small></p>
                     </div>
@@ -382,9 +393,22 @@
                 </div>
                 
                 <div class="lower-footer flex">
+                    <!-- Acknowledgments -->
                     <p>{{copyright}}</p>
                     <p>Call Us {{phoneNumber}}</p>
                     <p>{{email}}</p>
+
+                    <!-- Boxes on the right -->
+                    <div class="boxes">
+                        <div class="text-box">
+                            <img src="images/marketing-expert-cta.png" alt="Marketing Consultant">
+                            <p>{{hubSpotChat}}</p>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>       

@@ -36,7 +36,7 @@ footer {
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .form-container {
@@ -45,7 +45,7 @@ footer {
   font-size: 24px;
   padding: 25px 25px 10px;
   background-color: #fefefe;
-  width: 450px;
+  width: 420px;
   border-radius: 15px;
 }
 .form-container img {
@@ -199,7 +199,6 @@ header .navbar .logo {
 header .navbar ul.main-nav {
   align-items: center;
   height: 50px;
-  margin: 0 15px;
 }
 header .navbar ul.main-nav li {
   margin: 0 15px;
@@ -276,7 +275,45 @@ header .jumbotron .container .form-container {
   bottom: -5%;
   z-index: 2;
 }
+header .jumbotron .container .squared-boxes {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+header .jumbotron .container .squared-boxes .first-box i {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+header .jumbotron .container .squared-boxes .second-box .big-number {
+  font-size: 30px;
+  font-weight: 600;
+  color: #78e733e7;
+}
+header .jumbotron .container .squared-boxes .first-box,
+header .jumbotron .container .squared-boxes .second-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #fefefe;
+  box-shadow: 0 0 45px #010101;
+  cursor: pointer;
+}
+header .jumbotron .container .squared-boxes .first-box p,
+header .jumbotron .container .squared-boxes .second-box p {
+  margin: 0;
+}
 
+.features {
+  padding-bottom: 60px;
+}
 .features .container {
   justify-content: space-between;
   align-items: center;
@@ -288,7 +325,7 @@ header .jumbotron .container .form-container {
   width: 100%;
 }
 .features .container .text-container {
-  width: 40%;
+  width: 60%;
   margin: 0 80px;
 }
 .features .container .text-container p {
@@ -375,7 +412,7 @@ header .jumbotron .container .form-container {
 }
 #organisations .container .cards-container .card-box img {
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   cursor: pointer;
 }
 #organisations .container .cards-container .card-box img:hover {
@@ -402,7 +439,7 @@ header .jumbotron .container .form-container {
 }
 #organisations .button-div {
   font-size: 24px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 #organisations .button-div:hover a {
   background-color: #f76210;
@@ -438,12 +475,11 @@ header .jumbotron .container .form-container {
   margin-bottom: 50px;
 }
 #optimization .container.second .par-box .text-container p {
-  font-size: 24px;
+  font-size: 18px;
 }
 #optimization .container.second .qualities {
-  justify-content: center;
   width: 50%;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 #optimization .container.second .qualities ul {
   margin-top: 20px;
@@ -489,7 +525,7 @@ header .jumbotron .container .form-container {
 }
 #optimization .container.third .awards .awards-box img {
   width: 50%;
-  height: 130px;
+  height: 115px;
 }
 #optimization .container.third .awards .awards-box p {
   width: 100%;
@@ -509,7 +545,7 @@ header .jumbotron .container .form-container {
   align-items: center;
 }
 #team .container .image-box {
-  width: 60%;
+  width: 50%;
 }
 #team .container .image-box img {
   width: 80%;
@@ -565,7 +601,6 @@ header .jumbotron .container .form-container {
 }
 #make-happen .container .paragraphs {
   width: 50%;
-  padding-right: 100px;
 }
 #make-happen .container .paragraphs p:first-of-type {
   position: relative;
@@ -593,7 +628,7 @@ header .jumbotron .container .form-container {
 #make-happen .container .form-container {
   align-items: center;
   width: 35%;
-  margin-left: 80px;
+  margin-left: 150px;
 }
 #make-happen .container .form-container h4 {
   color: #010101;
@@ -606,10 +641,12 @@ header .jumbotron .container .form-container {
   margin-top: 10px;
 }
 
+footer {
+  position: relative;
+}
 footer .container .upper-footer .title-box {
   flex-direction: column;
   flex-basis: 40%;
-  margin-right: 120px;
 }
 footer .container .upper-footer .title-box .social-logos {
   margin-top: 25px;
@@ -634,12 +671,53 @@ footer .container .upper-footer .company-box ul li {
   margin: 15px 0;
 }
 footer .container .lower-footer {
-  justify-content: space-between;
   margin-top: 60px;
 }
-footer .container .lower-footer p:nth-child(2) {
-  margin-right: 100px;
+footer .container .lower-footer p:nth-of-type(2) {
+  margin: auto 90px;
 }
-footer .container .lower-footer p:last-child {
-  margin-right: 50px;
+footer .container .lower-footer p:last-of-type {
+  margin-left: 220px;
+}
+footer .container .lower-footer .boxes {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  margin-right: 10px;
+}
+footer .container .lower-footer .boxes .text-box {
+  position: relative;
+  width: 190px;
+  height: 140px;
+  padding: 20px;
+  box-shadow: 0 0 15px #858786;
+}
+footer .container .lower-footer .boxes .text-box img {
+  position: absolute;
+  left: 35%;
+  top: -30%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+footer .container .lower-footer .boxes .text-box p {
+  margin: 0;
+}
+footer .container .lower-footer .boxes .text-box i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #858786;
+}
+footer .container .lower-footer .boxes .icon-box {
+  text-align: right;
+  margin-top: 15px;
+}
+footer .container .lower-footer .boxes .icon-box i {
+  font-size: 30px;
+  color: #fefefe;
+  background-color: #f76210;
+  border: 1px solid #f76210;
+  border-radius: 50%;
+  padding: 10px;
 }

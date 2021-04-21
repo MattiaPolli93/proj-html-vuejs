@@ -1,4 +1,6 @@
-.features {    
+.features {
+    padding-bottom: 60px;
+
     .container {
         justify-content: space-between;
         align-items: center;
@@ -12,7 +14,7 @@
         }
         
         .text-container {
-            width: 40%;
+            width: 60%;
             margin: 0 80px;
 
             p {
@@ -51,5 +53,5 @@
         &.reverse {
             flex-direction: row-reverse;
         }
-    }        
+    }
 }
