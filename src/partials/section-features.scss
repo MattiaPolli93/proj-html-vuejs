@@ -17,6 +17,29 @@
 
             p {
                 font-size: $font-normal;
+
+                .fa-sliders-h {
+                    background-color: #2455b0;
+                    
+                }
+
+                .fa-water {
+                    background-color: #ece046;
+                }
+
+                .fa-ellipsis-h {
+                    background-color: #78e733;
+                }
+
+                .fa-sliders-h,
+                .fa-water,
+                .fa-ellipsis-h {
+                    font-size: $font-small;
+                    color: #fff;
+                    padding: 12px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
             }
 
             a {

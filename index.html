@@ -41,7 +41,7 @@
                         {{phoneNumber}}</a>
                     </li>
                     <li>
-                        <a href="#" class="btn">{{buttons.freeQuote}}</a>
+                        <a href="#" class="btn-orange-light">{{buttons.freeQuote}}</a>
                     </li>
                 </ul>
             </div>
@@ -63,14 +63,14 @@
                     <div class="form-container flex">
                         <img src="images/marketing-consultant-expert.jpg" alt="Richard Madsen">
                         <h4>Richard Madsen</h4>
-                        <p>Marketing Consultant Expert</p>
+                        <p>{{marketingExpert}}</p>
                         <a href="#"><i class="fas fa-phone-alt"></i>
                         {{phoneNumber}}</a>
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Your Email*">
                         <input type="text" placeholder="Your Phone Number*">
                         <a href="#" class="btn text-center">{{buttons.callback}}</a>
-                        <p><small>By submitting my data I agree to be contacted</small></p>
+                        <p><small>{{submitData}}</small></p>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                         <img :src="featuresSection.brand.image" alt="Features 1">
                     </div>
                     <div class="text-container">
-                        <p>{{featuresSection.brand.par}}</p>
+                        <p><i class="fas fa-sliders-h"></i> {{featuresSection.brand.par}}</p>
                         <h2>{{featuresSection.brand.title}}</h2>
                         <p>{{placeholders.placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
@@ -98,7 +98,7 @@
                         <img :src="featuresSection.sales.image" alt="Features 2">
                     </div>
                     <div class="text-container">
-                        <p>{{featuresSection.sales.par}}</p>
+                        <p><i class="fas fa-water"></i> {{featuresSection.sales.par}}</p>
                         <h2>{{featuresSection.sales.title}}</h2>
                         <p>{{placeholders.placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
@@ -111,7 +111,7 @@
                         <img :src="featuresSection.socialProof.image" alt="Features 3">
                     </div>
                     <div class="text-container">
-                        <p>{{featuresSection.socialProof.par}}</p>
+                        <p><i class="fas fa-ellipsis-h"></i> {{featuresSection.socialProof.par}}</p>
                         <h2>{{featuresSection.socialProof.title}}</h2>
                         <p>{{placeholders.placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{buttons.consultationText}}</span></a>
@@ -142,11 +142,11 @@
                         <img src="images/marketing-expert-cta.png" alt="Marketing Consultant">
                         <div class="text flex">
                             <h5>Sandy Reiff</h5>
-                            <p>Marketing Consultant Expert</p>
+                            <p>{{marketingExpert}}</p>
                         </div>
                     </div>
                     <h4>Drive Leads and Sales with Avada</h4>
-                    <a href="#"><span class="btn"><i class="fas fa-phone-alt"></i>{{phoneNumber}}</span></a>
+                    <a href="#"><span class="btn-orange-light"><i class="fas fa-phone-alt"></i> {{phoneNumber}}</span></a>
                 </div>
             </section>
 
@@ -324,14 +324,14 @@
                     <div class="form-container flex">
                         <img src="images/marketing-consultant-expert.jpg" alt="Richard Madsen">
                         <h4>Richard Madsen</h4>
-                        <p>Marketing Consultant Expert</p>
+                        <p>{{marketingExpert}}</p>
                         <a href="#"><i class="fas fa-phone-alt"></i>
                         {{phoneNumber}}</a>
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Your Email*">
                         <input type="text" placeholder="Your Phone Number*">
                         <a href="#" class="btn text-center">{{buttons.callback}}</a>
-                        <p><small>By submitting my data I agree to be contacted</small></p>
+                        <p><small>{{submitData}}</small></p>
                     </div>
                 </div>
             </section>

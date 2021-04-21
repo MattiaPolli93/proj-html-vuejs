@@ -1,16 +1,32 @@
 .btn {
     color: $white;
     background-color: $orange-dark;
+    
+    &:hover {
+        background-color: $orange-light;
+    }
+}
+
+.btn-orange-light {
+    color: $orange-dark;
+    background-color: #ffe7da;
+
+    &:hover {
+        color: $white;
+        background-color: $orange-dark;
+    }
 }
 
 .btn-white {
     background-color: $white;
 }
 
+.btn-orange-light,
 .btn,
 .btn-white {
     line-height: 20px;
     border-radius: 10px;
     padding: 16px 40px;
-    font-size: 18px;
+    font-size: $font-small;
+    font-weight: 500;
 }

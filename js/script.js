@@ -8,6 +8,8 @@ const app = new Vue({
         phoneNumber: "(555) 802-1234",
         email: "info@yourcompany.com",        
         copyright: "© 2020 • Avada Consultant • Powered by WordPress",
+        submitData: "By submitting my data I agree to be contacted",
+        marketingExpert: "Marketing Consultant Expert",
 
         // Placeholder texts
         placeholders: {
