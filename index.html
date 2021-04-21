@@ -88,7 +88,7 @@
                     <div class="text-container">
                         <p>Business Growth</p>
                         <h2>Increase Brand Awareness</h2>
-                        <p>{{featuresText}}</p>
+                        <p>{{placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{consultationText}}</span></a>
                     </div>                    
             </section>
@@ -101,7 +101,7 @@
                     <div class="text-container">
                         <p>Investors in People</p>
                         <h2>In-House Sales Training</h2>
-                        <p>{{featuresText}}</p>
+                        <p>{{placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{consultationText}}</span></a>
                     </div>                    
             </section>
@@ -114,7 +114,7 @@
                     <div class="text-container">
                         <p>Social Media Analysis</p>
                         <h2>Harness Your Social Proof</h2>
-                        <p>{{featuresText}}</p>
+                        <p>{{placeholderLongText}}</p>
                         <a href="#"><span class="btn">{{consultationText}}</span></a>
                     </div>                    
             </section>
@@ -154,27 +154,27 @@
             <!-- Organisations section -->
             <section id="organisations">
                 <div class="container">
-                    <h2 class="text-center">Trusted by Leading Organisations</h2>
+                    <h2 class="text-center">{{organisationSection.title}} </h2>
 
                     <!-- Cards -->
                     <div class="cards-container flex">
                         <div class="card-box flex">
                             <img src="images/case-studies-1.jpg" alt="Case 1">
-                            <h2><a href="#">How Spaces attracted five million visitors by improving the content</a></h2>
-                            <h3>200%</h3>
-                            <p>Higher revenue from digital</p>
+                            <h2><a href="#">{{organisationSection.boxes[0].boxPar}}</a></h2>
+                            <h3>{{organisationSection.boxes[0].number}}</h3>
+                            <p>{{organisationSection.boxes[0].par}}</p>
                         </div>
                         <div class="card-box flex">
                             <img src="images/case-studies-4.jpg" alt="Case 4">
-                            <h2><a href="#">Creativity helped Hemisferio to increase their brand reach vertically</a></h2>
-                            <h3>10x</h3>
-                            <p>Sales increase with the same ad spend</p>
+                            <h2><a href="#">{{organisationSection.boxes[1].boxPar}}</a></h2>
+                            <h3>{{organisationSection.boxes[1].number}}</h3>
+                            <p>{{organisationSection.boxes[1].par}}</p>
                         </div>
                         <div class="card-box flex">
                             <img src="images/case-studies-6.jpg" alt="Case 6">
-                            <h2><a href="#">How DigitalBox used AI-powered data insight to boost sales</a></h2>
-                            <h3>3-year</h3>
-                            <p>Partnership with Avada Consultant</p>
+                            <h2><a href="#">{{organisationSection.boxes[2].boxPar}}</a></h2>
+                            <h3>{{organisationSection.boxes[2].number}}</h3>
+                            <p>{{organisationSection.boxes[2].par}}</p>
                         </div>
                     </div>
 
@@ -190,8 +190,8 @@
                 <!-- First one -->
                 <div class="container flex">
                     <div class="text-box">
-                        <h2>We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.</h2>
-                        <p>Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet pellentesque sem neque eget.</p>
+                        <h2>{{optimizationSection.mainTitles[0]}}</h2>
+                        <p>{{placeholderShortText}}</p>
                         <a href="#"><span class="btn">Why Work With Us</span></a>
                     </div>
                     <div class="image-box">
@@ -204,12 +204,12 @@
                     <!-- On the left -->
                     <div class="par-box flex">
                         <div class="text-container">
-                            <h3>We Build Relationships</h3>
-                            <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
+                            <h3>{{optimizationSection.titles[0]}}</h3>
+                            <p>{{placeholderText}}</p>
                         </div>
                         <div class="text-container">
-                            <h3>Proprietary Processes</h3>
-                            <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>                        
+                            <h3>{{optimizationSection.titles[1]}}</h3>
+                            <p>{{placeholderText}}</p>                       
                         </div>
                     </div>
 
@@ -219,22 +219,22 @@
                             <li class="flex">
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
-                                    <h3>Accountability</h3>
-                                    <p>Curabitur ac leo nunc vestibulum</p>
+                                    <h3>{{optimizationSection.qualities[0]}}</h3>
+                                    <p>{{placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
-                                    <h3>Transparency</h3>
-                                    <p>Curabitur ac leo nunc vestibulum</p>
+                                    <h3>{{optimizationSection.qualities[1]}}</h3>
+                                    <p>{{placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-signal"></i>
                                 <div class="texts">
-                                    <h3>Investment</h3>
-                                    <p>Curabitur ac leo nunc vestibulum</p>
+                                    <h3>{{optimizationSection.qualities[2]}}</h3>
+                                    <p>{{placeholderShortTextSecond}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -243,23 +243,23 @@
 
                 <!-- Third one -->
                 <div class="container third flex">
-                    <h3>Awards</h3>
+                    <h3>{{optimizationSection.mainTitles[1]}}</h3>
                     <div class="awards flex">
                         <div class="awards-box text-center">
-                            <img src="images/award-a.png" alt="Award A">
-                            <p>Winner Seo Master MAGT <br> Smart Start Award 2017</p>
+                            <img :src="optimizationSection.awards[0].image" alt="Award A">
+                            <p>{{optimizationSection.awards[0].text}}</p>
                         </div>
                         <div class="awards-box text-center">
-                            <img src="images/award-b.png" alt="Award B">
-                            <p>Top Social Media Agencies <br> Next Partner 2018</p>
+                            <img :src="optimizationSection.awards[1].image" alt="Award B">
+                            <p>{{optimizationSection.awards[1].text}}</p>
                         </div>
                         <div class="awards-box text-center">
-                            <img src="images/award-c.png" alt="Award C">
-                            <p>10 Fastest Growing Abstract <br> Solution Providers 2019</p>
+                            <img :src="optimizationSection.awards[2].image" alt="Award C">
+                            <p>{{optimizationSection.awards[2].text}}</p>
                         </div>
                         <div class="awards-box text-center">
-                            <img src="images/award-d.png" alt="Award D">
-                            <p>National Excellence Agencie <br> Award Winner 2020</p>
+                            <img :src="optimizationSection.awards[3].image" alt="Award D">
+                            <p>{{optimizationSection.awards[3].text}}</p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                     <!-- Title -->
                     <div class="title-button-box flex">
                         <div class="title">
-                            <h2>Marketing Resources: Insider Advice on How to Increase Online Sales</h2>
+                            <h2>{{resourcesSection.title}}</h2>
                         </div>
                         <a href="#"><span class="btn">Explore All Resources</span></a>
                     </div>
@@ -294,15 +294,15 @@
                     <div class="img-boxes flex">
                         <div class="img-box">
                             <img src="images/blog-posts-6.jpg" alt="Blog 6">
-                            <h3>Marketing Tips And Tricks For Your Website</h3>
+                            <h3>{{resourcesSection.boxes[0].title}}</h3>
                         </div>
                         <div class="img-box">
                             <img src="images/blog-posts-5.jpg" alt="Blog 5">
-                            <h3>How to Write Stunning Blog Post Titles</h3>
+                            <h3>{{resourcesSection.boxes[1].title}}</h3>
                         </div>
                         <div class="img-box">
                             <img src="images/blog-posts-4.jpg" alt="Blog 4">
-                            <h3>Techniques to Reduce Facebook Ads Spend</h3>
+                            <h3>{{resourcesSection.boxes[2].title}}</h3>
                         </div>
                     </div>
                 </div>
@@ -314,11 +314,11 @@
 
                     <!-- Left -->
                     <div class="paragraphs">
-                        <h2>Let's Make Things Happen</h2>
-                        <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
-                        <p>“The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”</p>
-                        <h5>George Anderson</h5>
-                        <p><small>Digitalbox CEO</small></p>
+                        <h2>{{makeHappenSection.title}} </h2>
+                        <p>{{placeholderText}}</p>
+                        <p>“{{makeHappenSection.paragraph}}”</p>
+                        <h5>{{makeHappenSection.name}}</h5>
+                        <p><small>{{makeHappenSection.smallTag}}</small></p>
                     </div>
 
                     <!-- Right -->
@@ -358,7 +358,7 @@
 
                     <!-- Lists -->
                     <div class="services-box flex" >
-                        <h5>{{services.title}} </h5>
+                        <h5>{{services.title}}</h5>
                         <ul>
                             <li v-for="(item) in services.links">
                                 <a href="#">{{item}}</a>
@@ -366,7 +366,7 @@
                         </ul>
                     </div>
                     <div class="resources-box flex">
-                        <h5>{{resources.title}} </h5>
+                        <h5>{{resources.title}}</h5>
                         <ul>
                             <li v-for="(item) in resources.links">
                                 <a href="#">{{item}}</a>
@@ -374,7 +374,7 @@
                         </ul>
                     </div>
                     <div class="company-box flex">
-                        <h5>{{company.title}} </h5>
+                        <h5>{{company.title}}</h5>
                         <ul>
                             <li v-for="(item) in company.links">
                                 <a href="#">{{item}}</a>
