@@ -34,7 +34,18 @@ footer {
         }
 
         .lower-footer {
+            justify-content: space-between;
+            margin-top: 60px;
 
+            p {
+                &:nth-child(2) {
+                    margin-right: 100px;
+                }
+
+                &:last-child {
+                    margin-right: 50px;
+                }
+            }
         }
     }
 }

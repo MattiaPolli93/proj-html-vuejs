@@ -615,3 +615,13 @@ footer .container .upper-footer .company-box ul li {
   font-weight: 400;
   margin: 15px 0;
 }
+footer .container .lower-footer {
+  justify-content: space-between;
+  margin-top: 60px;
+}
+footer .container .lower-footer p:nth-child(2) {
+  margin-right: 100px;
+}
+footer .container .lower-footer p:last-child {
+  margin-right: 50px;
+}

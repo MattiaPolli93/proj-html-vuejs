@@ -17,19 +17,18 @@ const app = new Vue({
         // Footer data
         footerTitle: "Grow Your Online Business Strategically, and Improve Customer Retention.",
         services: {
-                title: "Services",
-                links: ["Marketing Plan", "Sales Development", "Digital Marketing", "Pricing", "Why Us", "Case Studies"]
+            title: "Services",
+            links: ["Marketing Plan", "Sales Development", "Digital Marketing", "Pricing", "Why Us", "Case Studies"]
         },
         resources: {
-                title: "Resources",
-                links: ["Learning Center", "Video Tutorials", "Customers", "Blog"]
+            title: "Resources",
+            links: ["Learning Center", "Video Tutorials", "Customers", "Blog"]
         },
         company: {
-                title: "Company",
-                links: ["Who We Are", "Contact Us", "Careers"]
-        }
-    },
-    methods: {
-
+            title: "Company",
+            links: ["Who We Are", "Contact Us", "Careers"]
+        },
+        copyright: "© 2020 • Avada Consultant • Powered by WordPress",
+        email: "info@yourcompany.com"
     }
 });
