@@ -29,7 +29,8 @@ a {
   color: #010101;
 }
 
-section {
+section,
+footer {
   margin: 100px 0;
 }
 
@@ -42,14 +43,14 @@ section {
   flex-direction: column;
   align-items: center;
   font-size: 24px;
-  padding: 10px 25px;
+  padding: 25px 25px 10px;
   background-color: #fefefe;
   width: 450px;
   border-radius: 15px;
 }
 .form-container img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 .form-container p {
@@ -131,7 +132,8 @@ h1 {
 
 #optimization h3,
 #team h3,
-#resources h3 {
+#resources h3,
+footer h3 {
   font-size: 32px;
   font-weight: 500;
 }
@@ -145,6 +147,11 @@ h1 {
   font-size: 70px;
   color: #fefefe;
   line-height: 80px;
+}
+
+footer h5 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .btn {
@@ -568,7 +575,8 @@ header .jumbotron .container .form-container {
 }
 #make-happen .container .form-container {
   align-items: center;
-  width: 40%;
+  width: 35%;
+  margin-left: 80px;
 }
 #make-happen .container .form-container h4 {
   color: #010101;
@@ -579,4 +587,31 @@ header .jumbotron .container .form-container {
 }
 #make-happen .container .form-container p:last-of-type {
   margin-top: 10px;
+}
+
+footer .container .upper-footer .title-box {
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-right: 120px;
+}
+footer .container .upper-footer .title-box .social-logos {
+  margin-top: 25px;
+}
+footer .container .upper-footer .title-box .social-logos i {
+  font-size: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+footer .container .upper-footer .services-box,
+footer .container .upper-footer .resources-box,
+footer .container .upper-footer .company-box {
+  flex-direction: column;
+  flex-basis: 20%;
+}
+footer .container .upper-footer .services-box ul li,
+footer .container .upper-footer .resources-box ul li,
+footer .container .upper-footer .company-box ul li {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px 0;
 }

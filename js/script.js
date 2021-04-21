@@ -13,6 +13,21 @@ const app = new Vue({
         consultationText: "Get a Consultation",
 
         // Section - Organisation data
+
+        // Footer data
+        footerTitle: "Grow Your Online Business Strategically, and Improve Customer Retention.",
+        services: {
+                title: "Services",
+                links: ["Marketing Plan", "Sales Development", "Digital Marketing", "Pricing", "Why Us", "Case Studies"]
+        },
+        resources: {
+                title: "Resources",
+                links: ["Learning Center", "Video Tutorials", "Customers", "Blog"]
+        },
+        company: {
+                title: "Company",
+                links: ["Who We Are", "Contact Us", "Careers"]
+        }
     },
     methods: {
 

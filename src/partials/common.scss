@@ -31,7 +31,8 @@ a {
     color: $black;
 }
 
-section {
+section,
+footer {
     margin: 100px 0;
 }
 
@@ -46,14 +47,14 @@ section {
     flex-direction: column;
     align-items: center;
     font-size: $font-normal;
-    padding: 10px 25px;
+    padding: 25px 25px 10px;
     background-color: $white;
     width: 450px;
     border-radius: 15px;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
     }
 

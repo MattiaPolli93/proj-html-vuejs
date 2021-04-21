@@ -4,7 +4,7 @@
     margin: 0;
     padding: 100px 0;
     
-    .container {
+    .container {        
         .paragraphs {
             width: 50%;
             padding-right: 100px;
@@ -41,7 +41,8 @@
 
         .form-container {
             align-items: center;
-            width: 40%;
+            width: 35%;
+            margin-left: 80px;
 
             h4 {
                 color: $black;

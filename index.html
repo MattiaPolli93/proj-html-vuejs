@@ -311,6 +311,8 @@
             <!-- Make-things-happen section -->
             <section id="make-happen">
                 <div class="container flex">
+
+                    <!-- Left -->
                     <div class="paragraphs">
                         <h2>Let's Make Things Happen</h2>
                         <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
@@ -318,6 +320,8 @@
                         <h5>George Anderson</h5>
                         <p><small>Digitalbox CEO</small></p>
                     </div>
+
+                    <!-- Right -->
                     <div class="form-container flex">
                         <img src="images/marketing-consultant-expert.jpg" alt="Richard Madsen">
                         <h4>Richard Madsen</h4>
@@ -334,9 +338,56 @@
             </section>
         </main>       
 
-        <!-- Footer 
-        <footer></footer>
-        -->
+        <!-- Footer  -->
+        <footer>
+            <div class="container">
+                <div class="upper-footer flex">
+
+                    <!-- Title and Socials -->
+                    <div class="title-box flex">
+                        <h3>{{footerTitle}}</h3>
+                        <div class="social-logos">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                    </div>
+
+                    <!-- Lists -->
+                    <div class="services-box flex" >
+                        <h5>{{services.title}} </h5>
+                        <ul>
+                            <li v-for="(item) in services.links">
+                                <a href="#">{{item}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resources-box flex">
+                        <h5>{{resources.title}} </h5>
+                        <ul>
+                            <li v-for="(item) in resources.links">
+                                <a href="#">{{item}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="company-box flex">
+                        <h5>{{company.title}} </h5>
+                        <ul>
+                            <li v-for="(item) in company.links">
+                                <a href="#">{{item}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lower-footer">
+                    
+                </div>
+            </div>
+        </footer>       
     </div>
 
     <!-- JS -->
