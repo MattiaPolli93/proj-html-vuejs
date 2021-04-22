@@ -6,16 +6,17 @@
         align-items: center;
         
         .image-container {
-            margin: 0 100px;
+            width: 60%;
+            margin-left: 0 80px;
             
             img {
-                width: 100%;
+                width: 80%;
             }
         }
         
         .text-container {
-            width: 60%;
-            margin: 0 80px;
+            width: 40%;
+            margin: 0 60px;
 
             p {
                 font-size: $font-normal;
@@ -52,6 +53,12 @@
 
         &.reverse {
             flex-direction: row-reverse;
+
+            .image-container {
+                img {
+                    float: right;
+                }
+            }
         }
     }
 }

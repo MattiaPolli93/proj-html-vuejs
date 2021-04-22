@@ -62,7 +62,7 @@ header {
 
     .jumbotron {
         height: calc(100vh - 115px);
-        background-image: url("../../images/marketing-intro.jpg");
+        background-image: url("partials/../../images/marketing-intro.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: 45%;
@@ -74,12 +74,12 @@ header {
             .title-container {
                 flex-direction: column;
                 justify-content: center;
-                width: 50%;
+                width: 55%;
                 height: 100%;
 
                 p {
                     color: $white;
-                    font-size: 30px;
+                    font-size: 28px;
                 }
 
                 .title-link {
@@ -107,8 +107,13 @@ header {
                 box-shadow: 2px 2px 10px $grey-dark;
                 position: absolute;
                 right: 15%;
-                bottom: -5%;
-                z-index: 2;                                 
+                bottom: -8%;
+                z-index: 2;
+                
+                p {
+                    font-size: $font-small;
+                    margin: 15px 0;
+                }
             }
 
             .squared-boxes {
@@ -133,6 +138,10 @@ header {
                         font-size: 30px;
                         font-weight: 600;
                         color: #78e733e7;
+
+                        .small {
+                            font-size: $font-small;
+                        }
                     }
                 }
 
