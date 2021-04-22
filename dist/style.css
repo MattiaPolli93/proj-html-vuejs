@@ -107,7 +107,7 @@ footer {
   height: 100%;
   bottom: 0;
   visibility: hidden;
-  background: linear-gradient(to top, #f8601199 0, #f8601100 100%);
+  background: linear-gradient(to top, #7310f799 0, #f8601100 100%);
 }
 
 h1 {
@@ -610,6 +610,8 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #resources .container .img-boxes .img-box {
   width: calc(100% / 3);
+  position: relative;
+  cursor: pointer;
 }
 #resources .container .img-boxes .img-box:nth-child(2) {
   margin: 0 35px;
@@ -617,6 +619,13 @@ header .jumbotron .container .squared-boxes .second-box p {
 #resources .container .img-boxes .img-box img {
   width: 100%;
   margin-bottom: 25px;
+}
+#resources .container .img-boxes .img-box .overlay {
+  height: 69%;
+  top: 0;
+}
+#resources .container .img-boxes .img-box:hover .overlay {
+  visibility: visible;
 }
 
 #make-happen {

@@ -12,7 +12,7 @@
                 width: 55%;
 
                 h2 {
-                    line-height: 60px;
+                    line-height: $line-height;
                 }
             }
 
@@ -27,14 +27,25 @@
 
             .img-box {
                 width: calc(100% / 3);
-
+                position: relative;
+                cursor: pointer;
+                
                 &:nth-child(2) {
                     margin: 0 35px;
                 }
-
+                
                 img {
                     width: 100%;
                     margin-bottom: 25px;
+                }
+
+                .overlay {
+                    height: 69%;
+                    top: 0;
+                }
+
+                &:hover .overlay {
+                    visibility: visible;
                 }
             }
         }
