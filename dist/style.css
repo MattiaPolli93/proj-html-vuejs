@@ -64,7 +64,7 @@ footer {
   font-size: 14px;
 }
 .form-container a {
-  color: #f76210;
+  color: #7310f7;
   font-size: 18px;
   font-weight: 500;
 }
@@ -89,7 +89,7 @@ footer {
   transition: 0.5s;
 }
 .form-container input:hover {
-  border: 1px solid #f76210;
+  border: 1px solid #7310f7;
 }
 .form-container input::-moz-placeholder {
   font-size: 18px;
@@ -99,6 +99,15 @@ footer {
 }
 .form-container input::placeholder {
   font-size: 18px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  visibility: hidden;
+  background: linear-gradient(to top, #f8601199 0, #f8601100 100%);
 }
 
 h1 {
@@ -156,20 +165,20 @@ footer h5 {
 
 .btn {
   color: #fefefe;
-  background-color: #f76210;
+  background-color: #7310f7;
 }
 .btn:hover {
   background-color: #eb621f;
 }
 
 .btn-orange-light {
-  color: #f76210;
+  color: #7310f7;
   background-color: #ffe7da;
   transition: 0.3s;
 }
 .btn-orange-light:hover {
   color: #fefefe;
-  background-color: #f76210;
+  background-color: #7310f7;
 }
 
 .btn-white {
@@ -205,10 +214,10 @@ header .navbar ul.main-nav li {
   height: 30px;
 }
 header .navbar ul.main-nav li:first-child, header .navbar ul.main-nav li:hover {
-  border-bottom: 2px solid #f76210;
+  border-bottom: 2px solid #7310f7;
 }
 header .navbar ul.main-nav li:first-child a, header .navbar ul.main-nav li:hover a {
-  color: #f76210;
+  color: #7310f7;
 }
 header .navbar ul.main-nav li a {
   color: #010101;
@@ -226,7 +235,7 @@ header .navbar ul.secondary-nav li:first-child {
 }
 header .navbar ul.secondary-nav li:first-child i {
   margin-right: 15px;
-  color: #f76210;
+  color: #7310f7;
 }
 header .navbar ul.secondary-nav li:first-child a {
   color: #010101;
@@ -418,16 +427,20 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #organisations .container .cards-container .card-box {
   flex-direction: column;
-  width: 100%;
+  width: calc(100% / 3);
   margin: 0 20px;
 }
-#organisations .container .cards-container .card-box img {
-  width: 100%;
+#organisations .container .cards-container .card-box .img-box {
+  position: relative;
   height: 55vh;
   cursor: pointer;
 }
-#organisations .container .cards-container .card-box img:hover {
-  filter: sepia(3);
+#organisations .container .cards-container .card-box .img-box:hover .overlay {
+  visibility: visible;
+}
+#organisations .container .cards-container .card-box .img-box img {
+  width: 100%;
+  height: 100%;
 }
 #organisations .container .cards-container .card-box h2 {
   font-size: 28px;
@@ -436,7 +449,7 @@ header .jumbotron .container .squared-boxes .second-box p {
   margin: 25px 0 40px;
 }
 #organisations .container .cards-container .card-box h2:hover a {
-  color: #f76210;
+  color: #7310f7;
 }
 #organisations .container .cards-container .card-box h2 a {
   transition: 0.5s;
@@ -453,7 +466,7 @@ header .jumbotron .container .squared-boxes .second-box p {
   margin-top: 40px;
 }
 #organisations .button-div:hover a {
-  background-color: #f76210;
+  background-color: #7310f7;
 }
 
 #optimization {
@@ -501,15 +514,15 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #optimization .container.second .qualities ul li:hover i,
 #optimization .container.second .qualities ul li:hover .texts h3 {
-  color: #f76210;
+  color: #7310f7;
 }
 #optimization .container.second .qualities ul li:not(:last-child) {
   margin-bottom: 50px;
 }
 #optimization .container.second .qualities ul li i {
   font-size: 30px;
-  color: #f76210;
-  border: 2px solid #f76210;
+  color: #7310f7;
+  border: 2px solid #7310f7;
   border-radius: 20px;
   padding: 25px;
 }
@@ -731,8 +744,8 @@ footer .container .lower-footer .boxes .icon-box {
 footer .container .lower-footer .boxes .icon-box i {
   font-size: 30px;
   color: #fefefe;
-  background-color: #f76210;
-  border: 1px solid #f76210;
+  background-color: #7310f7;
+  border: 1px solid #7310f7;
   border-radius: 50%;
   padding: 15px;
 }
