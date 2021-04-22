@@ -610,21 +610,24 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #resources .container .img-boxes .img-box {
   width: calc(100% / 3);
-  position: relative;
   cursor: pointer;
 }
 #resources .container .img-boxes .img-box:nth-child(2) {
   margin: 0 35px;
 }
-#resources .container .img-boxes .img-box img {
-  width: 100%;
+#resources .container .img-boxes .img-box .img {
+  position: relative;
+  height: 35vh;
   margin-bottom: 25px;
 }
-#resources .container .img-boxes .img-box .overlay {
-  height: 69%;
-  top: 0;
+#resources .container .img-boxes .img-box .img img {
+  width: 100%;
+  height: 100%;
 }
-#resources .container .img-boxes .img-box:hover .overlay {
+#resources .container .img-boxes .img-box .img .overlay {
+  height: 100%;
+}
+#resources .container .img-boxes .img-box .img:hover .overlay {
   visibility: visible;
 }
 
