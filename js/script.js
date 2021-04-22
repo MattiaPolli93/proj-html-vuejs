@@ -154,7 +154,7 @@ const app = new Vue({
             ]
         },
 
-        // Section - Resources data
+        // Section - Make-happen data
         makeHappenSection: {
             title: "Let's Make Things Happen",
             paragraph: "The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.",

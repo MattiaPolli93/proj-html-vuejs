@@ -48,7 +48,7 @@ header {
                     margin-right: 25px;
                     
                     i {
-                        margin-right: 15px;
+                        margin-right: 10px;
                         color: $orange-dark;
                     }
                     
@@ -76,6 +76,7 @@ header {
                 justify-content: center;
                 width: 55%;
                 height: 100%;
+                padding-bottom: 50px;
 
                 p {
                     color: $white;
@@ -107,12 +108,12 @@ header {
                 box-shadow: 2px 2px 10px $grey-dark;
                 position: absolute;
                 right: 15%;
-                bottom: -8%;
+                bottom: -5%;
                 z-index: 2;
                 
                 p {
                     font-size: $font-small;
-                    margin: 15px 0;
+                    margin-top: 6px;
                 }
             }
 
@@ -133,13 +134,19 @@ header {
                     }
                 }
 
-                .second-box {                    
+                .second-box {  
+                    position: relative;
+                    padding-top: 5px;
+
                     .big-number {
                         font-size: 30px;
                         font-weight: 600;
-                        color: #78e733e7;
+                        color: $green;
 
                         .small {
+                            position: absolute;
+                            top: 5px;
+                            left: 7px;
                             font-size: $font-small;
                         }
                     }
