@@ -64,7 +64,7 @@ footer {
   font-size: 14px;
 }
 .form-container a {
-  color: #7310f7;
+  color: #f76210;
   font-size: 18px;
   font-weight: 500;
 }
@@ -89,7 +89,7 @@ footer {
   transition: 0.5s;
 }
 .form-container input:hover {
-  border: 1px solid #7310f7;
+  border: 1px solid #f76210;
 }
 .form-container input::-moz-placeholder {
   font-size: 18px;
@@ -107,7 +107,7 @@ footer {
   height: 100%;
   bottom: 0;
   visibility: hidden;
-  background: linear-gradient(to top, #7310f799 0, #f8601100 100%);
+  background: linear-gradient(to top, #F7621099 0, #f8601100 100%);
 }
 
 h1 {
@@ -165,20 +165,20 @@ footer h5 {
 
 .btn {
   color: #fefefe;
-  background-color: #7310f7;
+  background-color: #f76210;
 }
 .btn:hover {
   background-color: #eb621f;
 }
 
 .btn-orange-light {
-  color: #7310f7;
+  color: #f76210;
   background-color: #ffe7da;
   transition: 0.3s;
 }
 .btn-orange-light:hover {
   color: #fefefe;
-  background-color: #7310f7;
+  background-color: #f76210;
 }
 
 .btn-white {
@@ -214,10 +214,10 @@ header .navbar ul.main-nav li {
   height: 30px;
 }
 header .navbar ul.main-nav li:first-child, header .navbar ul.main-nav li:hover {
-  border-bottom: 2px solid #7310f7;
+  border-bottom: 2px solid #f76210;
 }
 header .navbar ul.main-nav li:first-child a, header .navbar ul.main-nav li:hover a {
-  color: #7310f7;
+  color: #f76210;
 }
 header .navbar ul.main-nav li a {
   color: #010101;
@@ -235,7 +235,7 @@ header .navbar ul.secondary-nav li:first-child {
 }
 header .navbar ul.secondary-nav li:first-child i {
   margin-right: 10px;
-  color: #7310f7;
+  color: #f76210;
 }
 header .navbar ul.secondary-nav li:first-child a {
   color: #010101;
@@ -457,7 +457,7 @@ header .jumbotron .container .squared-boxes .second-box p {
   margin: 25px 0 40px;
 }
 #organisations .container .cards-container .card-box h2:hover a {
-  color: #7310f7;
+  color: #f76210;
 }
 #organisations .container .cards-container .card-box h2 a {
   transition: 0.5s;
@@ -474,7 +474,7 @@ header .jumbotron .container .squared-boxes .second-box p {
   margin-top: 40px;
 }
 #organisations .button-div:hover a {
-  background-color: #7310f7;
+  background-color: #f76210;
 }
 
 #optimization {
@@ -522,15 +522,15 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #optimization .container.second .qualities ul li:hover i,
 #optimization .container.second .qualities ul li:hover .texts h3 {
-  color: #7310f7;
+  color: #f76210;
 }
 #optimization .container.second .qualities ul li:not(:last-child) {
   margin-bottom: 50px;
 }
 #optimization .container.second .qualities ul li i {
   font-size: 30px;
-  color: #7310f7;
-  border: 2px solid #7310f7;
+  color: #f76210;
+  border: 2px solid #f76210;
   border-radius: 20px;
   padding: 25px;
 }
@@ -682,6 +682,7 @@ header .jumbotron .container .squared-boxes .second-box p {
 }
 #make-happen .container .form-container p {
   font-size: 18px;
+  margin-top: 6px;
 }
 #make-happen .container .form-container p:last-of-type {
   margin-top: 10px;
@@ -764,8 +765,8 @@ footer .container .lower-footer .boxes .icon-box {
 footer .container .lower-footer .boxes .icon-box i {
   font-size: 30px;
   color: #fefefe;
-  background-color: #7310f7;
-  border: 1px solid #7310f7;
+  background-color: #f76210;
+  border: 1px solid #f76210;
   border-radius: 50%;
   padding: 15px;
 }

@@ -5,13 +5,15 @@ const app = new Vue({
     el: "#app",
     data: {
         // Mix
-        phoneNumber: "(555) 802-1234",
-        email: "info@yourcompany.com",        
-        copyright: "© 2020 • Avada Consultant • Powered by WordPress",
-        submitData: "By submitting my data I agree to be contacted",
-        marketingExpert: "Marketing Consultant Expert",
-        hubSpotChat: "This is a free HubSpot live chat. You can create your own customers with Avada & HubSpot!",
-
+        mix: {
+            phoneNumber: "(555) 802-1234",
+            email: "info@yourcompany.com",        
+            copyright: "© 2020 • Avada Consultant • Powered by WordPress",
+            submitData: "By submitting my data I agree to be contacted",
+            marketingExpert: "Marketing Consultant Expert",
+            hubSpotChat: "This is a free HubSpot live chat. You can create your own customers with Avada & HubSpot!",
+        },
+        
         // Placeholder texts
         placeholders: {
             placeholderLongText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
